@@ -122,7 +122,7 @@ public class Exercise1{
     public void question10(Account[] accounts){
         int Number_of_Account = accounts.length;
         for(int i = 0; i < Number_of_Account; i++){
-            System.out.println("Thông tin account thứ " + i + " là:");
+            System.out.println("Thông tin account thứ " + (i+1) + " là:");
             System.out.println("Email: " + accounts[i].getEmail());
             System.out.println("Full Name: " + accounts[i].getUsername());
             System.out.println("Phòng Ban: " + accounts[i].getDepartment().getDepartmentName());
@@ -132,7 +132,7 @@ public class Exercise1{
     public void question11(Department[] departments){
         int Number_of_Department = departments.length;
         for(int i = 0; i < Number_of_Department; i++){
-            System.out.println("Thông tin department thứ " + i + " là: ");
+            System.out.println("Thông tin department thứ " + (i+1) + " là: ");
             System.out.println("Id: " + departments[i].getDepartmentID());
             System.out.println("Name: " + departments[i].getDepartmentName());
         }
@@ -140,7 +140,7 @@ public class Exercise1{
 
     public void question12(Department[] departments){
         for(int i = 0; i < 2; i++ ){
-            System.out.println("Thông tin department thứ " + i + " là: ");
+            System.out.println("Thông tin department thứ " + (i+1) + " là: ");
             System.out.println("Id: " + departments[i].getDepartmentID());
             System.out.println("Name: " + departments[i].getDepartmentName());
         }
@@ -150,7 +150,7 @@ public class Exercise1{
         int Number_of_Account = accounts.length;
         for(int i = 0; i < Number_of_Account; i++){
             if (i != 2){
-                System.out.println("Thông tin account thứ " + i + " là:");
+                System.out.println("Thông tin account thứ " + (i+1) + " là:");
                 System.out.println("Email: " + accounts[i].getEmail());
                 System.out.println("Full Name: " + accounts[i].getUsername());
                 System.out.println("Phòng Ban: " + accounts[i].getDepartment().getDepartmentName());
@@ -160,7 +160,7 @@ public class Exercise1{
 
     public void question14(Account[] accounts){
         for(int i = 0; i < 3; i++ ){
-            System.out.println("Thông tin account thứ " + i + " là:");
+            System.out.println("Thông tin account thứ " + (i+1) + " là:");
             System.out.println("Email: " + accounts[i].getEmail());
             System.out.println("Full Name: " + accounts[i].getUsername());
             System.out.println("Phòng Ban: " + accounts[i].getDepartment().getDepartmentName());
@@ -180,34 +180,61 @@ public class Exercise1{
         int Number_of_Account = accounts.length;
         int i = 0;
         while (i < Number_of_Account) {
-            i++;
-            System.out.println("Thông tin account thứ " + i + " là:");
+            System.out.println("Thông tin account thứ " + (i+1) + " là:");
             System.out.println("Email: " + accounts[i].getEmail());
             System.out.println("Full Name: " + accounts[i].getUsername());
             System.out.println("Phòng Ban: " + accounts[i].getDepartment().getDepartmentName());
+            i++;
         }
-        ;
 
         //Q11 redo
+        System.out.println("---------------------------------");
         int Number_of_Department = departments.length;
         int j = 0;
         while (j < Number_of_Department) {
-            j++;
-            System.out.println("Thông tin department thứ " + j + " là: ");
+            System.out.println("Thông tin department thứ " + (j+1) + " là: ");
             System.out.println("Id: " + departments[j].getDepartmentID());
             System.out.println("Name: " + departments[j].getDepartmentName());
+            j++;
         }
 
         //Q12 redo
+        System.out.println("---------------------------------");
         int a = 0;
         while(a < 2){
-            a++;
-            System.out.println("Thông tin department thứ " + a + " là: ");
+            System.out.println("Thông tin department thứ " + (a+1) + " là: ");
             System.out.println("Id: " + departments[a].getDepartmentID());
             System.out.println("Name: " + departments[a].getDepartmentName());
+            a++;
         }
-        //Q13 redo
 
+        //Q13 redo
+        System.out.println("---------------------------------");
+        int b = 0;
+        while(b < Number_of_Account){
+            if(b == 1){
+                b++;
+                continue;
+            }
+            System.out.println("Thông tin account thứ " + (b + 1) + " là:");
+            System.out.println("Email: " + accounts[b].getEmail());
+            System.out.println("Full Name: " + accounts[b].getUsername());
+            System.out.println("Phòng Ban: " + accounts[b].getDepartment().getDepartmentName());
+            b++;
+        }
+
+        //Q14 redo
+        System.out.println("---------------------------------");
+        int c = 0;
+        while(c < 3){
+            System.out.println("Thông tin account thứ " + (c+1) + " là:");
+            System.out.println("Email: " + accounts[c].getEmail());
+            System.out.println("Full Name: " + accounts[c].getUsername());
+            System.out.println("Phòng Ban: " + accounts[c].getDepartment().getDepartmentName());
+            c++;
+        }
+        //Q15 redo
+        System.out.println("---------------------------------");
     }
 
     public void question17(){
