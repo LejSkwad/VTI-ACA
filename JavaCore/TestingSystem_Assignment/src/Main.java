@@ -20,7 +20,7 @@ public class Main {
 
         Account[] accounts = new Account[3];
         accounts[0] = new Account(1, "a1@gmail.com", "user1", "Nguyễn Văn A", departments[0], positions[0], LocalDate.now());
-        accounts[1] = new Account(2, "a2@gmail.com", "user2", "Trần Thị B", departments[0], positions[1], LocalDate.now()); // <-- target
+        accounts[1] = new Account(2, "a2@gmail.com", "user2", "Trần Thị B", departments[0], positions[1], LocalDate.now());
         accounts[2] = new Account(3, "a3@gmail.com", "user3", "Lê Văn C", departments[1], positions[1], LocalDate.now());
 
         Group g1 = new Group(1, "Java Fresher", null, LocalDate.now());
@@ -31,8 +31,8 @@ public class Main {
         GroupAccount[] groupAccounts = new GroupAccount[]{
                 new GroupAccount(g1, accounts[1], LocalDate.now()),
                 new GroupAccount(g2, accounts[1], LocalDate.now()),
-                new GroupAccount(g3, accounts[2], LocalDate.now()), // acc3
-                new GroupAccount(g4, accounts[0], LocalDate.now())  // acc1
+                new GroupAccount(g3, accounts[2], LocalDate.now()),
+                new GroupAccount(g4, accounts[0], LocalDate.now())
         };
 
         Exercise1 ex1 = new Exercise1();
