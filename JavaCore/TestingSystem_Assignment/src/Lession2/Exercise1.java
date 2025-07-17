@@ -235,6 +235,15 @@ public class Exercise1{
         }
         //Q15 redo
         System.out.println("---------------------------------");
+        int d = 0;
+        while(d < 20){
+            if(d % 2 != 0){
+                d++;
+                continue;
+            }
+            System.out.println(d);
+            d++;
+        }
     }
 
     public void question17(){

@@ -1,4 +1,5 @@
 import Lession2.Exercise1;
+import Lession2.Exercise2;
 import entity.Account;
 import entity.Department;
 import entity.GroupAccount;
@@ -37,5 +38,8 @@ public class Main {
 
         Exercise1 ex1 = new Exercise1();
         ex1.question16(accounts, departments);
+
+        Exercise2 ex2 = new Exercise2();
+        ex2.question6(accounts);
     }
 }
