@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise1{
-    public void question1(Account[] accounts) {
+    public static void question1(Account[] accounts) {
         Account acc = accounts[1];
         if (acc.getDepartment() == null) {
             System.out.println("Nhan vien chua co phong ban");
@@ -18,7 +18,7 @@ public class Exercise1{
         }
     }
 
-    public void question2(GroupAccount[] groupAccounts, Account[] accounts) {
+    public static void question2(GroupAccount[] groupAccounts, Account[] accounts) {
         Account acc = accounts[1];
 
         List<Group> joinedGroup = new ArrayList<>();
@@ -40,18 +40,18 @@ public class Exercise1{
         }
     }
 
-    public void question3(Account[] accounts) {
+    public static void question3(Account[] accounts) {
         Account acc = accounts[1];
         System.out.println(acc.getDepartment() == null ? "Nhân viên chưa có phòng ban" : "Phòng ban của nhân viên này là " + acc.getDepartment().getDepartmentName());
     }
 
-    public void question4(Account[] accounts) {
+    public static void question4(Account[] accounts) {
         Account acc = accounts[0];
         String Position = acc.getPosition().getPositionName();
         System.out.println(Position.equals("Dev") ? "Đây là Developer" : "Người này không phải là Developer");
     }
 
-    public void question5(GroupAccount[] groupAccounts, Group[] groups) {
+    public static void question5(GroupAccount[] groupAccounts, Group[] groups) {
         Group group = groups[0];
         List<Account> joinedAccount = new ArrayList<>();
         for(GroupAccount ga : groupAccounts) {
@@ -69,7 +69,7 @@ public class Exercise1{
         System.out.println(Message);
     }
 
-    public void question6(GroupAccount[] groupAccounts, Account[] accounts) {
+    public static void question6(GroupAccount[] groupAccounts, Account[] accounts) {
         Account acc = accounts[1];
 
         List<Group> joinedGroup = new ArrayList<>();
@@ -90,7 +90,7 @@ public class Exercise1{
         System.out.println(Message);
     }
 
-    public void question7(Account[] accounts) {
+    public static void question7(Account[] accounts) {
         Account acc = accounts[0];
         String Position = acc.getPosition().getPositionName();
         String Message = switch(Position){
@@ -100,7 +100,7 @@ public class Exercise1{
         System.out.println(Message);
     }
 
-    public void question8(Account[] accounts) {
+    public static void question8(Account[] accounts) {
         for (Account acc : accounts) {
             System.out.println("ID: " + acc.getAccountID());
             System.out.println("Email: " + acc.getEmail());
@@ -112,14 +112,14 @@ public class Exercise1{
         }
     }
 
-    public void question9(Department[] departments) {
+    public static void question9(Department[] departments) {
         for (Department department : departments) {
             System.out.println("ID: " + department.getDepartmentID());
             System.out.println("Name: " + department.getDepartmentName());
         }
     }
 
-    public void question10(Account[] accounts){
+    public static void question10(Account[] accounts){
         int Number_of_Account = accounts.length;
         for(int i = 0; i < Number_of_Account; i++){
             System.out.println("Thông tin account thứ " + (i+1) + " là:");
@@ -129,7 +129,7 @@ public class Exercise1{
         }
     }
 
-    public void question11(Department[] departments){
+    public static void question11(Department[] departments){
         int Number_of_Department = departments.length;
         for(int i = 0; i < Number_of_Department; i++){
             System.out.println("Thông tin department thứ " + (i+1) + " là: ");
@@ -138,7 +138,7 @@ public class Exercise1{
         }
     }
 
-    public void question12(Department[] departments){
+    public static void question12(Department[] departments){
         for(int i = 0; i < 2; i++ ){
             System.out.println("Thông tin department thứ " + (i+1) + " là: ");
             System.out.println("Id: " + departments[i].getDepartmentID());
@@ -146,7 +146,7 @@ public class Exercise1{
         }
     }
 
-    public void question13(Account[] accounts){
+    public static void question13(Account[] accounts){
         int Number_of_Account = accounts.length;
         for(int i = 0; i < Number_of_Account; i++){
             if (i != 2){
@@ -158,7 +158,7 @@ public class Exercise1{
         }
     }
 
-    public void question14(Account[] accounts){
+    public static void question14(Account[] accounts){
         for(int i = 0; i < 3; i++ ){
             System.out.println("Thông tin account thứ " + (i+1) + " là:");
             System.out.println("Email: " + accounts[i].getEmail());
@@ -167,7 +167,7 @@ public class Exercise1{
         }
     }
 
-    public void question15(){
+    public static void question15(){
         for(int i = 0 ; i < 20 ; i++){
             if(i % 2 == 0){
                 System.out.println(i);
@@ -175,7 +175,7 @@ public class Exercise1{
         }
     }
 
-    public void question16(Account[] accounts, Department[] departments) {
+    public static void question16(Account[] accounts, Department[] departments) {
         //Q10 redo
         int Number_of_Account = accounts.length;
         int i = 0;
@@ -246,7 +246,7 @@ public class Exercise1{
         }
     }
 
-    public void question17(){
+    public static void question17(){
 
     }
 }

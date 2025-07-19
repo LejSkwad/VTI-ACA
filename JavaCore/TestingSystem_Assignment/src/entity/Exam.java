@@ -1,6 +1,7 @@
 package entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Exam {
     private int examID;
@@ -9,11 +10,11 @@ public class Exam {
     private CategoryQuestion category;
     private int duration;
     private Account creator;
-    private LocalDate createDate;
+    private LocalDateTime createDate;
 
     public Exam(int examID, String code, String title,
                 CategoryQuestion category, int duration,
-                Account creator, LocalDate createDate) {
+                Account creator, LocalDateTime createDate) {
         this.examID = examID;
         this.code = code;
         this.title = title;
@@ -71,11 +72,11 @@ public class Exam {
         this.creator = creator;
     }
 
-    public LocalDate getCreateDate() {
+    public LocalDateTime getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(LocalDate createDate) {
+    public void setCreateDate(LocalDateTime createDate) {
         this.createDate = createDate;
     }
 }
