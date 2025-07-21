@@ -52,6 +52,8 @@ public class Main {
 
         //Exercise4.question4();
 
-        Exercise5.question1();
+        //Exercise5.question1();
+
+        Exercise6.question1();
     }
 }
