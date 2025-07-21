@@ -1,4 +1,3 @@
-import Lession2.*;
 import entity.*;
 
 import java.time.LocalDate;
@@ -44,16 +43,7 @@ public class Main {
                 new Exam(4, "JV02", "Java Collections Test", categoryQuestions[0], 75, accounts[2], LocalDateTime.of(2025, 7, 22, 9, 0, 0))
         };
 
-        //Exercise1.question16(accounts, departments);
+        //Testing_Assignment_2.Exercise6.question1();
 
-        //Exercise2.question6(accounts);
-
-        //Exercise3.question3(exams);
-
-        //Exercise4.question4();
-
-        //Exercise5.question1();
-
-        Exercise6.question1();
     }
 }
