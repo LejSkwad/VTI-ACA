@@ -1,6 +1,6 @@
 package Testing_Assignment_2;
 
-import entity.*;
+import Entity.*;
 
 
 import java.time.LocalDate;

@@ -1,6 +1,6 @@
 package Testing_Assignment_2;
 
-import entity.Account;
+import Entity.Account;
 
 public class Exercise6 {
     public static void question1(){

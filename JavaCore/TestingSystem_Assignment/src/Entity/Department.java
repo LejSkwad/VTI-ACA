@@ -1,4 +1,4 @@
-package entity;
+package Entity;
 
 public class Department {
     private int departmentID;

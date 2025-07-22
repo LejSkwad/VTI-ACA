@@ -1,14 +1,11 @@
 package DSA_Assignment_1;
 
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        int[] array = new int[7];
+        int[] array = new int[5];
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap cac gia tri cua mang");
         for(int i = 0;i < array.length;i++){
@@ -23,8 +20,13 @@ public class Exercise1 {
                     temp = array[j];
                     array[j] = array[k];
                     array[k] = temp;
+                    System.out.println("Có sự đổi chỗ");
+                    System.out.println(Arrays.toString(array));
+                } else{
+                    System.out.println("Không có sự đổi chỗ");
+                    System.out.println(Arrays.toString(array));
                 }
-                System.out.println(Arrays.toString(array));
+
             }
         }
     }

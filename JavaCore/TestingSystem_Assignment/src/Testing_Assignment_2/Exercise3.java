@@ -1,6 +1,6 @@
 package Testing_Assignment_2;
 
-import entity.Exam;
+import Entity.Exam;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;

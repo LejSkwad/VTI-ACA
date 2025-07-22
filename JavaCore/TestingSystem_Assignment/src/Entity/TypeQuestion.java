@@ -1,4 +1,4 @@
-package entity;
+package Entity;
 
 public class TypeQuestion {
     private int typeID;

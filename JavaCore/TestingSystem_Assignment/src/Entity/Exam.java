@@ -1,6 +1,5 @@
-package entity;
+package Entity;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Exam {

@@ -1,9 +1,9 @@
 package Testing_Assignment_2;
 
-import entity.Account;
-import entity.Department;
-import entity.Group;
-import entity.GroupAccount;
+import Entity.Account;
+import Entity.Department;
+import Entity.Group;
+import Entity.GroupAccount;
 
 import java.util.ArrayList;
 import java.util.List;

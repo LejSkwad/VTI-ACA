@@ -1,6 +1,6 @@
 package Testing_Assignment_2;
 
-import entity.Account;
+import Entity.Account;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
