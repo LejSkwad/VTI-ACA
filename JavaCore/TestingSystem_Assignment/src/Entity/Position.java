@@ -9,6 +9,11 @@ public class Position {
         this.positionName = positionName;
     }
 
+    @Override
+    public String toString(){
+        return "Position ID: " + positionID + ", Name: " + positionName;
+    }
+
     public int getPositionID() {
         return positionID;
     }

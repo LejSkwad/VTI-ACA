@@ -1,5 +1,6 @@
 package Testing_Assignment_3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise4 {
@@ -62,5 +63,26 @@ public class Exercise4 {
     }
 
     public static void question7(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Nhap vao ho va ten: ");
+        String str1 = input.nextLine();
+        System.out.println(str1.trim());
+
+        System.out.println("Nhap vao day du ho va ten: ");
+        String str2 = input.nextLine();
+        String[] words = str2.trim().split("\\s+");
+        String[] finalWords =  new String[words.length];
+        System.out.println(Arrays.toString(words));
+        for(int i = 0; i < words.length; i++){
+            char ch = words[i].charAt(0);
+            ch = Character.toUpperCase(ch);
+            finalWords[i] = ch+words[i].substring(1);
+        }
+        StringBuilder stringbuilder = new StringBuilder();
+        for (int i = 0; i < finalWords.length; i++) {
+            stringbuilder.append(finalWords[i]);
+            stringbuilder.append(" ");
+        }
+        System.out.println(stringbuilder);
     }
 }

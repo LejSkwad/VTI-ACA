@@ -9,6 +9,11 @@ public class Department {
         this.departmentName = departmentName;
     }
 
+    @Override
+    public String toString(){
+        return "Department ID: " + departmentID + ", Name: " + departmentName;
+    }
+
     public int getDepartmentID() {
         return departmentID;
     }
@@ -25,3 +30,4 @@ public class Department {
         this.departmentName = departmentName;
     }
 }
+
