@@ -3,7 +3,6 @@ package Testing_Assignment_3;
 import Entity.Department;
 import Entity.Position;
 
-import java.util.Arrays;
 
 public class Exercise5 {
     public static void question1(Department[] departments){
@@ -32,8 +31,5 @@ public class Exercise5 {
         } else {
             System.out.println("False");
         }
-    }
-
-    public static void question6(Department[] departments){
     }
 }
