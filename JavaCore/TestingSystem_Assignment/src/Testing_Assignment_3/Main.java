@@ -20,6 +20,6 @@ public class Main {
         //Exercise1.question4();
         //Exercise3.question2();
         //Exercise4.question7();
-        Exercise5.question6(departments);
+        //Exercise5.question6(departments);
     }
 }
