@@ -11,7 +11,8 @@ public class Position {
     private int PositionID;
 
     @Column(name = "PositionName")
-    private String PositionName;
+    @Enumerated(EnumType.STRING)
+    private PositionEnum PositionName;
 
     public int getPositionID() {
         return PositionID;
@@ -21,11 +22,11 @@ public class Position {
         PositionID = positionID;
     }
 
-    public String getPositionName() {
+    public PositionEnum getPositionName() {
         return PositionName;
     }
 
-    public void setPositionName(String positionName) {
+    public void setPositionName(PositionEnum positionName) {
         PositionName = positionName;
     }
 }
