@@ -1,4 +1,4 @@
-package org.example.Testing_Assignment_1.entity;
+package org.example.Testing_Assignment_1.Exercise1_3.entity;
 
 import jakarta.persistence.*;
 
@@ -47,5 +47,10 @@ public class Group {
 
     public void setCreateDate(LocalDateTime createDate) {
         this.CreateDate = createDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Group{id=" + GroupID + ", name='" + GroupName + "', createDate=" + CreateDate + "}";
     }
 }

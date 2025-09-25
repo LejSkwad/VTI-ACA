@@ -1,4 +1,4 @@
-package org.example.Testing_Assignment_1.entity;
+package org.example.Testing_Assignment_1.Exercise1_3.entity;
 
 import jakarta.persistence.*;
 

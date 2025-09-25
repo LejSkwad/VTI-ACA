@@ -1,7 +1,7 @@
-package org.example.Testing_Assignment_1.Repository;
+package org.example.Testing_Assignment_1.Exercise1_3.Repository;
 
-import org.example.Testing_Assignment_1.entity.Group;
-import org.example.Testing_Assignment_1.utils.HibernateUtils;
+import org.example.Testing_Assignment_1.Exercise1_3.entity.Group;
+import org.example.Testing_Assignment_1.Exercise1_3.utils.HibernateUtils;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -49,5 +49,19 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
         }
 
 
+    }
+
+    @Override
+    public Group getGroupByID(int id){
+        Session session;
+        try{
+            session = HibernateUtils.getSessionFactory().openSession();
+
+            Group group = session.get(Group.class, id);
+
+            return group;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
