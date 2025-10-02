@@ -19,7 +19,11 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="org.example.Testing_Assignment_1.Exercise1_3.entity.Group"/>
+        <mapping class="org.example.Entity.Group"/>
+        <mapping class="org.example.Entity.Account"/>
+        <mapping class="org.example.Entity.Department"/>
+        <mapping class="org.example.Entity.Employee"/>
+        <mapping class="org.example.Entity.Manager"/>
 
     </session-factory>
 </hibernate-configuration>

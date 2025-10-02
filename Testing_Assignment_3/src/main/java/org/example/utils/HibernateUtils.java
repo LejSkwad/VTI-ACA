@@ -1,4 +1,4 @@
-package org.example.Testing_Assignment_1.Exercise1_3.utils;
+package org.example.utils;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
