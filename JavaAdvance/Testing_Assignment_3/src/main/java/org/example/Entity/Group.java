@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 
 @Entity
-@Table
+@Table(name = "`Group`")
 public class Group {
     @Id
     @Column(name = "GroupID")
