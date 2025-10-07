@@ -40,7 +40,7 @@ public class DepartmentController {
     @PutMapping(value = "/{id}")
     public Department update(@RequestBody Department department, @PathVariable Integer id){
         department.setDepartmentID(id);
-        return departmentService.save(department);
+        return departmentService.update(department);
     }
 
     @DeleteMapping(value = "/{id}")
