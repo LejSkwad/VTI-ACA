@@ -20,6 +20,9 @@
         <property name="hbm2ddl.auto">create</property>
         <mapping class="org.example.Entity.Question"/>
         <mapping class="org.example.Entity.Answer"/>
+        <mapping class="org.example.Entity.Department"/>
+        <mapping class="org.example.Entity.Account"/>
+        <mapping class="org.example.Entity.Position"/>
 
     </session-factory>
 </hibernate-configuration>

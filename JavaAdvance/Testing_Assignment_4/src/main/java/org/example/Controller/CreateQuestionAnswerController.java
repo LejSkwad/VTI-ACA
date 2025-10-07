@@ -2,8 +2,8 @@ package org.example.Controller;
 
 import org.example.Entity.Answer;
 import org.example.Entity.Question;
-import org.example.Repository.AnswerRepository;
-import org.example.Repository.QuestionRepository;
+import org.example.Repository.AnswerRepositoryImp;
+import org.example.Repository.QuestionRepositoryImp;
 import org.example.Service.AnswerService;
 import org.example.Service.QuestionService;
 
@@ -11,10 +11,10 @@ import java.util.Scanner;
 
 public class CreateQuestionAnswerController {
     public static void main(String[] args){
-        QuestionRepository questionRepository = new QuestionRepository();
-        AnswerRepository answerRepository = new AnswerRepository();
-        QuestionService questionService = new QuestionService(questionRepository);
-        AnswerService answerService = new AnswerService(answerRepository);
+        QuestionRepositoryImp questionRepositoryImp = new QuestionRepositoryImp();
+        AnswerRepositoryImp answerRepositoryImp = new AnswerRepositoryImp();
+        QuestionService questionService = new QuestionService(questionRepositoryImp);
+        AnswerService answerService = new AnswerService(answerRepositoryImp);
 
         Scanner scanner = new Scanner(System.in);
         Question question = new Question();

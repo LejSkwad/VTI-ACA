@@ -1,29 +1,29 @@
 package org.example.Service;
 
 import org.example.Entity.Question;
-import org.example.Repository.QuestionRepository;
+import org.example.Repository.QuestionRepositoryImp;
 
 import java.util.List;
 
 public class QuestionService {
-    private QuestionRepository questionRepository;
+    private QuestionRepositoryImp questionRepositoryImp;
 
     //constructor
     public QuestionService() {}
-    public QuestionService(QuestionRepository questionRepository) {
-        this.questionRepository = questionRepository;
+    public QuestionService(QuestionRepositoryImp questionRepositoryImp) {
+        this.questionRepositoryImp = questionRepositoryImp;
     }
 
     public void create(Question question) {
-        questionRepository.save(question);
+        questionRepositoryImp.save(question);
     }
 
     public Question getQuestionByID(int questionID) {
-        return questionRepository.getQuestionByID(questionID);
+        return questionRepositoryImp.getQuestionByID(questionID);
     }
 
     public List<Question> getQuestionHaving2Answer() {
-        return questionRepository.getQuestionHaving2CorrectAns();
+        return questionRepositoryImp.getQuestionHaving2CorrectAns();
     }
 
 }

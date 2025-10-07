@@ -1,18 +1,18 @@
 package org.example.Service;
 
 import org.example.Entity.Answer;
-import org.example.Repository.AnswerRepository;
+import org.example.Repository.AnswerRepositoryImp;
 
 public class AnswerService {
-    private AnswerRepository answerRepository;
+    private AnswerRepositoryImp answerRepositoryImp;
 
     //constructor
     public AnswerService() {}
-    public AnswerService(AnswerRepository answerRepository) {
-        this.answerRepository = answerRepository;
+    public AnswerService(AnswerRepositoryImp answerRepositoryImp) {
+        this.answerRepositoryImp = answerRepositoryImp;
     }
 
     public void create(Answer answer){
-        answerRepository.save(answer);
+        answerRepositoryImp.save(answer);
     }
 }
