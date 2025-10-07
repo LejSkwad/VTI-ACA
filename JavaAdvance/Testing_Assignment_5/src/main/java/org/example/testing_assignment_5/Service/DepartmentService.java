@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DepartmentService {
@@ -16,12 +17,12 @@ public class DepartmentService {
         this.departmentRepository = departmentRepository;
     }
 
-    public Department findByDepartmentName(String name){
+    public Department findByName(String name){
         return departmentRepository.findByDepartmentName(name);
     }
 
-    public Department findByDepartmentID(int id){
-        return departmentRepository.findByDepartmentID(id);
+    public Optional<Department> findById(int id){
+        return departmentRepository.findById(id);
     }
 
     public List<Department> findAll(){

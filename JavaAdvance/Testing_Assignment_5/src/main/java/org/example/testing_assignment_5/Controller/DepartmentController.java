@@ -3,10 +3,12 @@ package org.example.testing_assignment_5.Controller;
 import org.example.testing_assignment_5.Entity.Department;
 import org.example.testing_assignment_5.Service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping(value = "/api/departments")
@@ -24,13 +26,13 @@ public class DepartmentController {
     }
 
     @GetMapping(value = "/{id}")
-    public Department findById(@PathVariable Integer id){
-        return departmentService.findByDepartmentID(id);
+    public Optional<Department> findById(@PathVariable Integer id){
+        return departmentService.findById(id);
     }
 
     @GetMapping(value = "/{name}")
     public Department findByName(@PathVariable String name){
-        return departmentService.findByDepartmentName(name);
+        return departmentService.findByName(name);
     }
 
     @PostMapping

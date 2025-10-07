@@ -8,31 +8,31 @@ public class Department {
     @Id
     @Column(name = "DepartmentID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int DepartmentID;
+    private int departmentId;
 
     @Column(name = "DepartmentName")
-    private String DepartmentName;
+    private String departmentName;
 
     //constructor
     public Department() {}
-    public Department(int DepartmentID, String DepartmentName) {
-        this.DepartmentID = DepartmentID;
-        this.DepartmentName = DepartmentName;
+    public Department(int departmentId, String departmentName) {
+        this.departmentId = departmentId;
+        this.departmentName = departmentName;
     }
 
     public int getDepartmentID() {
-        return DepartmentID;
+        return departmentId;
     }
 
-    public void setDepartmentID(int departmentID) {
-        DepartmentID = departmentID;
+    public void setDepartmentID(int departmentId) {
+        this.departmentId = departmentId;
     }
 
     public String getDepartmentName() {
-        return DepartmentName;
+        return departmentName;
     }
 
     public void setDepartmentName(String departmentName) {
-        DepartmentName = departmentName;
+        this.departmentName = departmentName;
     }
 }
