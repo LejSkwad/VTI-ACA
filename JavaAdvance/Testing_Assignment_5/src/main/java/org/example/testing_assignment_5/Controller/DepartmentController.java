@@ -3,14 +3,12 @@ package org.example.testing_assignment_5.Controller;
 import org.example.testing_assignment_5.Entity.Department;
 import org.example.testing_assignment_5.Service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
-@Controller
+@RestController
 @RequestMapping(value = "/api/departments")
 public class DepartmentController {
     private final DepartmentService departmentService;
@@ -40,7 +38,7 @@ public class DepartmentController {
         return departmentService.save(department);
     }
     @PutMapping(value = "/{id}")
-    public Department update(@RequestBody Department department, @PathVariable Integer id){
+    public Department update(@PathVariable Integer id, @RequestBody Department department){
         department.setDepartmentID(id);
         return departmentService.update(department);
     }
