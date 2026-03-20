@@ -1,7 +1,6 @@
 package org.example.Entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.JoinColumnOrFormula;
 
 @Entity
 @Table(name = "Account")
